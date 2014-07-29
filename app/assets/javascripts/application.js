@@ -1,9 +1,20 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require vendor/modernizr
-//= require foundation/foundation
+//= require angular
+//= require angular-route
+//= require controllers/homeCtrl
 
-$(document).on('ready page:load', function(){
-  $(document).foundation();
-});
+var app = angular.module('app', ['ngRoute']);
+
+function config($routeProvider){
+
+  $routeProvider.
+    otherwise({
+      templateUrl: '../public/index.html',
+      controller: 'HomeCtrl'
+    });
+}
+
+app.config(config);
+app.controller('HomeCtrl', HomeCtrl);

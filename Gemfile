@@ -17,6 +17,7 @@ gem 'foreman'
 gem 'capistrano', '~> 2.15'
 gem 'dalli'
 gem 'exception_notification'
+gem 'angularjs-rails'
 
 # SEO
 gem 'sitemap_generator'
@@ -63,7 +64,6 @@ gem 'jquery-rails'
 gem 'sass-rails','>= 4.0.0'
 gem 'coffee-rails','>= 4.0.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'foundation-rails', '~> 5.0'
 
 group :development do
   gem 'letter_opener'
